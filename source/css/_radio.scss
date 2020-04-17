@@ -4,12 +4,13 @@ $orange: #ff805b;
 .radio__label {
   position: relative;
   padding-left: 35px;
+  font-size: 18px;
 
   &::after {
     content: " ";
     position: absolute;
     left: 0;
-    top: 4px;
+    top: 3px;
     width: 18px;
     height: 18px;
     border-radius: 50%;
