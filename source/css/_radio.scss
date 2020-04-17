@@ -1,0 +1,30 @@
+$gray: #eaeaf5;
+$orange: #ff805b;
+
+.radio__label {
+  position: relative;
+  padding-left: 35px;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid $gray;
+    box-sizing: border-box;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    &::after {
+      border-color: #ff805b;
+    }
+  }
+}
+
+.radio__input:checked + .radio__label::after {
+  border: 6px solid #ff805b;
+}
