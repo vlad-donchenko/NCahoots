@@ -1,10 +1,26 @@
 {
   "name": "html",
   "version": "1.0.0",
-  "description": "",
+  "dependencies": {
+    "del": "^4.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "9.5.x",
+    "browser-sync": "2.26.x",
+    "gulp": "4.0.x",
+    "gulp-csso": "^3.0.1",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "4.0.x",
+    "gulp-sourcemaps": "2.6.x"
+  },
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "gulp start"
   },
   "repository": {
     "type": "git",

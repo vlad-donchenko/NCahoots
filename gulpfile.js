@@ -3,26 +3,25 @@
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
-var less = require("gulp-less");
+var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
+var del = require("del");
 
 gulp.task("css", function () {
-  return gulp.src("source/less/style.less")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(csso())
-    .pipe(rename("style.min.css"))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
-    .pipe(server.stream());
+  return gulp.src("source/css/style.scss")
+      .pipe(plumber())
+      .pipe(sourcemap.init())
+      .pipe(sass())
+      .pipe(postcss([ autoprefixer() ]))
+      .pipe(csso())
+      .pipe(rename("style.min.css"))
+      .pipe(sourcemap.write("."))
+      .pipe(gulp.dest("build/css"))
+      .pipe(server.stream());
 });
 
 gulp.task("server", function () {
@@ -34,9 +33,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/js/*.js", gulp.series("js-minify"));
-  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html"));
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
@@ -45,8 +42,27 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series(
-  "css",
-));
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+      .pipe(gulp.dest("build"));
+});
 
+gulp.task("copy", function () {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+    "source/images/**",
+    "source/js/**",
+    "source/*.ico",
+    "source/*.png"
+  ], {
+    base: "source"
+  })
+      .pipe(gulp.dest("build"));
+});
+
+gulp.task("clean", function () {
+  return del("build");
+});
+
+gulp.task("build", gulp.series("clean", "copy", "css", "html"));
 gulp.task("start", gulp.series("build", "server"));
