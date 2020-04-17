@@ -1,0 +1,153 @@
+//------------------------------
+//    HEADER
+//------------------------------
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 800;
+    padding: 44px 0;
+}
+
+.logo {
+    display: block;
+    width: 155px;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    font-size: 15px;
+    margin-left: 115px;
+    margin-right: auto;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        li {
+            padding-right: 53px;
+
+            a {
+                color: #fff;
+                height: 56px;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                &:after {
+                    @extend .a;
+                    position: absolute;
+                    z-index: 1;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    top: 0;
+                    left: 50%;
+                    margin-left: -2px;
+                    background: 0;
+                    transition: .3s;
+                }
+
+                &:hover {
+                    color: $c1;
+
+                    &:after {
+                        background: $c1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navigation_dark {
+    ul {
+        li {
+            a {
+                color: #25272a;
+            }
+        }
+    }
+}
+
+
+.navigation__title {
+    color: #aaabde;
+    font-size: 20px;
+    display: none;
+}
+
+.c-icon-menu {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: $c1;
+}
+
+.icon-menu {
+    width: 35px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.sw-topper,
+.sw-bottom,
+.sw-footer {
+    position: relative;
+    top: 0;
+    width: 100%;
+    max-width: 35px;
+    height: 3px;
+    border-radius: 3px;
+    background: #fff;
+    border: none;
+    transition: transform 0.5s, top 0.2s;
+}
+
+.sw-bottom {
+    top: 5px;
+}
+
+.sw-footer {
+    top: 10px;
+}
+
+.icon-menu.active .sw-topper {
+    top: 9px;
+    transform: rotate(135deg);
+}
+
+.icon-menu.active .sw-bottom {
+    top: 6px;
+    transform: rotate(-135deg);
+}
+
+.icon-menu.active .sw-footer {
+    top: 0;
+    transform: rotate(180deg);
+    opacity: 0;
+}
+
+
+
+
+
+
+//-------------------------------

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="319px" height="319px" viewBox="0 0 319 319" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="5-bg-element" transform="translate(0.5 0.5)" opacity="0.1">
+    <path d="M159 318C246.813 318 318 246.813 318 159C318 71.1867 246.813 0 159 0C71.1867 0 0 71.1867 0 159C0 201.806 1.78291e-12 318 1.78291e-12 318C1.78291e-12 318 113.993 318 159 318Z" id="Oval_4" fill="none" stroke="#B2B4FF" stroke-width="1" />
+    <path d="M118 236C183.17 236 236 183.17 236 118C236 52.8304 183.17 0 118 0C52.8304 0 0 52.8304 0 118C0 149.768 1.32316e-12 236 1.32316e-12 236C1.32316e-12 236 84.5987 236 118 236Z" transform="translate(41 41)" id="Oval_3" fill="none" stroke="#B2B4FF" stroke-width="1" />
+    <path d="M77 154C119.526 154 154 119.526 154 77C154 34.4741 119.526 0 77 0C34.4741 0 0 34.4741 0 77C0 97.7302 8.6342e-13 154 8.6342e-13 154C8.6342e-13 154 55.2043 154 77 154Z" transform="translate(82 82)" id="Oval_2" fill="none" stroke="#B2B4FF" stroke-width="1" />
+    <path d="M36 72C55.8822 72 72 55.8822 72 36C72 16.1177 55.8822 0 36 0C16.1177 0 0 16.1177 0 36C0 45.692 4.03677e-13 72 4.03677e-13 72C4.03677e-13 72 25.8098 72 36 72Z" transform="translate(123 123)" id="Oval_1" fill="none" stroke="#B2B4FF" stroke-width="1" />
+  </g>
+</svg>

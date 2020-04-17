@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="865px" height="864px" viewBox="0 0 865 864" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <linearGradient x1="0.5" y1="0.7920786" x2="0.5" y2="-0.18951565" id="gradient_1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="1" stop-color="#B2B4FF" />
+    </linearGradient>
+  </defs>
+  <g id="Group" transform="translate(0.5 0.5)">
+    <path d="M265.5 531C412.132 531 531 412.132 531 265.5C531 118.868 412.132 0 265.5 0C118.868 0 0 118.868 0 265.5C0 412.132 118.868 531 265.5 531Z" transform="translate(166.0001 166)" id="7-circle3" fill="none" stroke="url(#gradient_1)" stroke-width="1" />
+    <path d="M431.5 863C669.811 863 863 669.811 863 431.5C863 193.189 669.811 0 431.5 0C193.189 0 0 193.189 0 431.5C0 669.811 193.189 863 431.5 863Z" transform="matrix(-4.371139E-08 -1 1 -4.371139E-08 6.103516E-05 863)" id="7-circle2" fill="none" stroke="url(#gradient_1)" stroke-width="1" />
+    <path d="M344.5 689C534.762 689 689 534.762 689 344.5C689 154.238 534.762 0 344.5 0C154.238 0 0 154.238 0 344.5C0 534.762 154.238 689 344.5 689Z" transform="matrix(1.192488E-08 1 -1 1.192488E-08 776.0001 87)" id="7-circle" fill="none" stroke="url(#gradient_1)" stroke-width="1" />
+  </g>
+</svg>

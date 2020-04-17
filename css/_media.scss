@@ -1,0 +1,304 @@
+@media (hover: hover) {}
+
+
+@media screen and (min-width: 1600px) {
+    .header__content {
+        max-width: 2560px;
+        padding-left: 115px;
+        padding-right: 115px;
+    }
+
+    .offer__figure {
+        left: -50px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {}
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    .navigation {
+        margin: 0;
+
+        ul {
+            li {
+                padding: 0 20px;
+            }
+        }
+    }
+
+    .form_contacts {
+        margin: 0;
+    }
+
+    .contacts__map {
+        margin-bottom: 30px;
+    }
+
+    .form_pop {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .footer {
+        position: relative;
+    }
+
+    .footer__copyright {
+        position: absolute;
+        bottom: 30px;
+        left: 15px;
+        right: 15px;
+        text-align: center;
+    }
+
+    .footer__content {
+        flex-wrap: wrap;
+    }
+
+    .footer__col-1 {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 45px;
+    }
+
+    .for-investors__thumb {
+        margin-left: 0;
+    }
+
+    .icon-menu {
+        display: block;
+    }
+
+    .c-icon-menu {
+        display: flex;
+        margin-right: auto;
+        margin-left: 30px;
+    }
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 999;
+        background: $c2;
+        padding: 0;
+        margin: 0;
+        transform: translateX(-100%);
+        transition: .3s;
+
+        ul {
+            display: block;
+            overflow-y: auto;
+            overflow-x: hidden;
+            max-height: calc(100% - 50px);
+
+            li {
+                padding: 0 40px;
+
+                a {
+                    color: #fff;
+                    font-size: 24px;
+
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &.active {
+            transform: translateX(0);
+        }
+    }
+
+    .navigation__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 24px;
+        padding: 20px 40px 20px;
+        padding-right: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 10px;
+
+        .icon-menu {
+            margin-left: auto;
+            margin-right: 0;
+
+            div {
+                background: #fff;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+
+    .footer__col-3,
+    .footer__col-2 {
+        width: 50%;
+    }
+
+    .footer__col-4 {
+        margin: 0 auto;
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 406px;
+
+        .footer__title {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+    }
+
+    .form__item_capcha {
+        margin: 0 auto;
+    }
+
+    .form__item_submit {
+        width: 100%;
+        max-width: 304px;
+        margin: 0 auto;
+    }
+
+    .contacts {
+        background: 0;
+        padding-bottom: 90px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 540px) {
+    .header__content {
+        flex-wrap: wrap;
+    }
+
+    .get-gift {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .c-icon-menu {
+        margin: 0;
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .for-investors__thumb {
+        margin-top: 0;
+        margin-bottom: 45px;
+        padding-left: 90px;
+    }
+
+    .entry-content {
+        font-size: 16px;
+    }
+
+    .title-h1 {
+        font-size: 48px;
+    }
+
+    html {
+        font-size: 18px;
+    }
+
+    .form__item_50p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .footer__col-4 {
+        display: block;
+
+        .button_download {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .footer__col-3,
+    .footer__col-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer__col-2 {
+        padding-bottom: 56px;
+    }
+
+    .social {
+        padding-top: 30px;
+        justify-content: center;
+    }
+
+    .footer__title {
+        padding-bottom: 35px;
+    }
+
+    .form_pop {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    html {
+        font-size: 17px;
+    }
+
+    .g-recaptcha {
+        transform: translateX(-9%) scale(.8, .8);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//-

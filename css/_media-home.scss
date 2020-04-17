@@ -1,0 +1,300 @@
+@media screen and (max-width: 991px) {
+    .offer__content {
+        padding-left: 0;
+    }
+
+    .offer__figure {
+        position: relative;
+        top: auto;
+        margin-bottom: 40px;
+    }
+
+    .offer__title {
+        font-size: 52px;
+    }
+
+    .what-is__left {
+        width: 270px;
+    }
+
+    .what-is__right {
+        width: calc(100% - 340px);
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .what-is {
+        background-position: 131px 157px;
+    }
+
+    .steps {
+        max-width: 738px;
+    }
+
+    .title-h2 {
+        font-size: 36px;
+    }
+
+    .lh15 {
+        font-size: 18px;
+    }
+
+    .title-h3 {
+        font-size: 28px;
+    }
+
+    .receiving-parallax-1,
+    .receiving-parallax-2 {
+        background-size: contain;
+        background-position: center;
+        opacity: .5;
+    }
+
+    .faq__title {
+        width: 220px;
+    }
+
+    .faq__list {
+        width: calc(100% - 250px);
+    }
+
+    .benefits__col-numbers {
+        padding-top: 168px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .offer__form {
+        flex-wrap: wrap;
+
+        .form__item {
+            padding-bottom: 20px;
+        }
+
+        .form__item_submit {
+            width: 100%;
+            padding-bottom: 0;
+        }
+    }
+
+    .offer__bg-phone {
+        background-position: calc(50% + 515px) 54px;
+    }
+
+    .what-is__left {
+        width: 100%;
+        max-width: 368px;
+        margin: 0 auto 50px;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .what-is__content {
+        flex-wrap: wrap;
+    }
+
+    .offer {
+        padding-bottom: 50px;
+    }
+
+    .what-is__right {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .what-is {
+        background-position: 0 257px;
+        padding-bottom: 0;
+    }
+
+    .you-looking {
+        background-size: 900px auto;
+    }
+
+    .step-way-last,
+    .step-way {
+        display: none;
+        background: 0;
+    }
+
+    .step {
+        padding: 0 0 50px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .step__text {
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .step_3 {
+        .step__text {
+            padding-bottom: 90px;
+        }
+    }
+
+    .steps {
+        //max-width: 407px;
+        margin: 0 auto;
+    }
+
+    .you-looking__title {
+        margin-bottom: 70px;
+    }
+
+    .step__graphics {
+        margin: 0 auto;
+    }
+
+    .step-result {
+        margin-top: 0;
+    }
+
+    .time {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .time:after {
+        width: 200px;
+        height: 200px;
+    }
+
+    .benefits__col-numbers {
+        display: none;
+    }
+
+    .benefits__col {
+        width: calc(50% - 15px);
+    }
+
+    .faq__title {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .faq__list {
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 620px) {
+    .offer__title {
+        min-height: 253px;
+    }
+
+    .time:after {
+        display: none;
+    }
+
+    .two-min {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .offer__title {
+        max-width: 385px;
+        min-height: 316px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .offer__bg-phone {
+        background: 0;
+        display: none;
+    }
+
+    .offer__form .form__item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .time {
+        padding-right: 0;
+    }
+
+    .benefits__col {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .benefits__content {
+        flex-wrap: wrap;
+    }
+
+    .benefit {
+        min-height: 1px !important;
+    }
+
+    .download {
+        padding-bottom: 50px;
+    }
+
+    .download__buttons {
+        display: block;
+    }
+
+    .download__button {
+        width: 100%;
+
+        .button_download {
+            margin: 0 auto;
+        }
+    }
+
+    .download__thumb {
+        height: 210px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .offer__title {
+        font-size: 40px;
+        min-height: 255px;
+    }
+
+    .step__graphics {
+        width: 100%;
+    }
+
+    .time {
+        flex-wrap: wrap;
+    }
+
+    .time__item {
+        width: 100%;
+
+        &:last-child {
+            padding-top: 50px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//-

@@ -1,0 +1,120 @@
+$c1: #ff805b;
+$c2: #4548a1;
+
+$ff: 'Montserrat';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #4548a1;
+    overflow: hidden;
+}
+
+.wrapper_white {
+    background: #fff;
+}
+
+.wrapper_in {
+    padding-top: 200px;
+    color: #25272a;
+}
+
+footer {
+    margin-top: auto;
+}
+
+main {
+    flex-grow: 1;
+}
+
+html {
+    font-family: $ff, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.22;
+}
+
+select,
+button,
+input,
+textarea {
+    font-family: $ff, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    transition: .3s;
+    color: #000;
+    outline: 0;
+}
+
+.a {
+    content: '';
+    display: block;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.content_770 {
+    max-width: 800px;
+}
+
+.content_660 {
+    max-width: 660px;
+}
+
+.lh15 {
+    line-height: 1.5;
+    color: #aaabde;
+
+    strong {
+        font-weight: 700;
+        color: #fff;
+    }
+}
+
+@media (hover: hover) {
+    ::-webkit-scrollbar-button {
+        width: 7px;
+        height: 0px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #dddddd;
+        border-left: 0;
+        border-radius: 0;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 0px;
+        background-color: $c1;
+        border-radius: 0;
+    }
+
+    ::-webkit-resizer {
+        width: 7px;
+        height: 0px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
+}

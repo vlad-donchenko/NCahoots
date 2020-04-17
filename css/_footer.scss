@@ -1,0 +1,109 @@
+//------------------------------
+//    FOOTER
+//------------------------------ 
+.footer {
+    background: url(../images/logo-footer2@2x.png) center 100% no-repeat;
+    background-size: 2560px auto;
+
+    .button_download {
+        margin-bottom: 20px;
+    }
+}
+
+.social {
+    display: flex;
+    margin: 0 -10px;
+    padding-top: 72px;
+
+    li {
+        padding: 0 10px;
+
+        a {
+            width: 42px;
+            height: 42px;
+            background: #5053aa;
+            display: block;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: $c1;
+            }
+        }
+
+        .social__facebook {
+            background: #5053aa url(../images/facebook.svg) center no-repeat;
+        }
+
+        .social__instagram {
+            background: #5053aa url(../images/instagram.svg) center no-repeat;
+        }
+
+        .social__telegram {
+            background: #5053aa url(../images/telegram.svg) calc(50% - 2px) center no-repeat;
+        }
+    }
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(178, 180, 255, 0.1);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer__copyright {
+    color: #aaabde;
+    font-size: 15px;
+    line-height: 1.5;
+    padding-top: 30px;
+}
+
+.footer__title {
+    color: #aaabde;
+    font-size: 15px;
+    line-height: 1.5;
+    padding-bottom: 54px;
+    padding-top: 3px;
+}
+
+.footer__links {
+    li {
+        padding-bottom: 35px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        a {
+            color: #fff;
+            font-size: 15px;
+            line-height: 1.5;
+
+            &:hover {
+                color: $c1;
+            }
+        }
+    }
+}
+
+.footer__links_dark {
+    li {
+        a {
+            color: #25272a;
+        }
+    }
+}
+
+
+.footer__col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper_white {
+    .footer__title {
+        color: #9b9bb2;
+    }
+}
