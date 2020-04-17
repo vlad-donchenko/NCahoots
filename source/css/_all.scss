@@ -117,6 +117,22 @@
     margin-left: 0;
 }
 
+.form__item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__item-footer button {
+    max-width: 188px;
+}
+
+.form__item--row {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .prev-step {
     display: inline-block;
     margin-top: 10px;
@@ -1080,9 +1096,6 @@ a.instagram__item {
     width: 150px;
 }
 
-
-
-
 .step-progress {
     display: flex;
     align-items: center;
@@ -1133,15 +1146,6 @@ a.instagram__item {
 .step-item_3 {
     display: none;
 }
-
-
-
-
-
-
-
-
-
 
 //------------------------------
 //    for-investors
@@ -1261,20 +1265,3 @@ a.instagram__item {
 .form_contacts {
     margin: -50px 0 0 -40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//------------------------------
-//    AAAAAAAAAA
-//------------------------------

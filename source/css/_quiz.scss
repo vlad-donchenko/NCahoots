@@ -1,3 +1,16 @@
+$black: #25272a;
+
 .quiz {
   padding: 100px 0;
+  color: #25272a;
+}
+
+.quiz__form {
+  margin: 0;
+  border-radius: 25px;
+}
+
+.quiz__form .title-h3 {
+  text-align: center;
+  color: $black;
 }
