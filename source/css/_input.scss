@@ -35,6 +35,7 @@ input[type="tel"] {
     border-bottom: 2px solid #eaeaf5;
     -webkit-appearance: none;
     padding-bottom: 6px;
+    transition: all 0.3s;
 
     &.error {
         border-color: rgba(255, 0, 0, 0.7);
@@ -42,6 +43,10 @@ input[type="tel"] {
 
     &.valid {
         border-color: rgba(163, 211, 60, 0.7);
+    }
+
+    &:focus {
+        border-color: #ff6c42;
     }
 }
 
