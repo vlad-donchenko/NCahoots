@@ -132,11 +132,12 @@
 
 .form__footer button {
     max-width: 188px;
+    text-align: center;
 }
 
 .form__item--row {
     display: grid;
-    gap: 30px;
+    grid-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -148,7 +149,7 @@
 .form__user {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    grid-gap: 30px;
 }
 
 .quiz .form__user .form__item {
@@ -187,6 +188,7 @@
 
 .form__item--row .form__title {
     grid-column: 1 / -1;
+    margin-bottom: 0;
 }
 
 .form__loader {

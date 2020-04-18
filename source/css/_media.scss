@@ -62,6 +62,18 @@
         padding-left: 40px;
         padding-right: 40px;
     }
+
+    .slick-arrow {
+        &:hover,
+        &:focus {
+            border-color: $orange;
+            background-color: $orange;
+
+            &::after {
+                border-color: $white;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -264,6 +276,7 @@
     }
 
     .form__footer button {
+        display: inline-block;
         max-width: 100%;
 
         &:first-child {
@@ -316,7 +329,7 @@
     }
 
     .form__user {
-        gap: 40px;
+        grid-gap: 40px;
     }
 
     .input-picture--radio .input-picture__input:checked + .input-picture__label::after {

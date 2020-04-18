@@ -12,7 +12,7 @@
   width: 5em;
   height: 1em;
   background-image: url("../images/star.svg");
-  background-size: 1em auto;
+  background-size: 1em 0.9em;
   background-repeat: repeat-x;
 }
 
@@ -22,12 +22,12 @@
   top: 0;
   left: 0;
   margin: 0;
-  height: 1em;
+  height: 2em;
   font-size: inherit;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-size: 1em auto;
+  background-size: 1em 0.9em;
   background-repeat: repeat-x;
 
   &:focus {
@@ -36,7 +36,7 @@
 }
 
 .rating__star:hover,
-.rating__star:checked {
+.rating__input:checked + .rating__star {
   background-image: url("../images/star-active.svg");
 }
 
