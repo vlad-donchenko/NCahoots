@@ -9,6 +9,10 @@ $ff: 'Montserrat';
     box-sizing: border-box;
 }
 
+body {
+    min-width: 320px;
+}
+
 ul li {
     list-style: none;
 }

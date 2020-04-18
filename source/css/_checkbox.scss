@@ -4,14 +4,15 @@ $orange: #ff805b;
 
 .checkbox__label {
   position: relative;
+  display: flex;
   padding-left: 35px;
-  font-size: 18px;
+  font-size: 15px;
 
   &::after {
     content: " ";
     position: absolute;
     left: 0;
-    top: 1px;
+    top: 0;
     width: 22px;
     height: 22px;
     border: 2px solid $gray;
@@ -24,7 +25,7 @@ $orange: #ff805b;
     content: " ";
     position: absolute;
     left: 5px;
-    top: 6px;
+    top: 5px;
     width: 13px;
     height: 7px;
     border: 2px solid $white;

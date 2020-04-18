@@ -13,11 +13,30 @@
     }
 }
 
+@media screen and (max-width: 1199px) {
+    .checkbox__label,
+    .radio__label {
+        font-size: 14px;
+    }
 
-@media screen and (max-width: 1200px) {}
+    .input-picture__title {
+        font-size: 14px;
+    }
 
+    .radio__label::after {
+        top: 0;
+    }
 
+    .checkbox__label {
+        &::after {
+            top: -1px;
+        }
 
+        &::before {
+            top: 5px;
+        }
+    }
+}
 
 
 @media screen and (max-width: 991px) {
@@ -44,15 +63,6 @@
         padding-right: 40px;
     }
 }
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 767px) {
     .footer {
@@ -151,14 +161,17 @@
     }
 }
 
+@media screen and (max-width: 750px) {
+    .form__item--row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
-
-
-
-
-
-
-
+@media screen and (max-width: 654px) {
+    .form__item--row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 @media screen and (max-width: 640px) {
 
@@ -243,6 +256,78 @@
     .form__item_50p {
         width: 100%;
     }
+
+    .form__footer {
+        margin-top: 40px;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .form__footer button {
+        max-width: 100%;
+
+        &:first-child {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .form__item--row {
+        grid-template-columns: 1fr;
+    }
+
+    .form__user {
+        grid-template-columns: 1fr;
+    }
+
+    .input-picture__img img {
+        height: 150px;
+    }
+
+    .input-picture__label::after {
+        width: 20px;
+        height: 20px;
+    }
+
+    .input-picture__title {
+        padding: 15px 10px;
+        font-size: 15px;
+    }
+
+    .input-picture__title {
+        font-size: 14px;
+    }
+
+    .form__title {
+        margin-bottom: 20px;
+    }
+
+    .form__item--row .form__title {
+        margin-bottom: 0;
+    }
+
+    .quiz .form__item {
+        margin-bottom: 40px;
+    }
+
+    .quiz .form__user .form__item {
+        margin-bottom: 40px;
+    }
+
+    .form__user {
+        gap: 40px;
+    }
+
+    .input-picture--radio .input-picture__input:checked + .input-picture__label::after {
+        background-color: #fff;
+        border: 6px solid #ff805b;
+    }
+
+    .input-picture__label::before {
+        top: 15px;
+        right: 13px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -287,6 +372,10 @@
 
     .g-recaptcha {
         transform: translateX(-9%) scale(.8, .8);
+    }
+
+    .input-picture__img img {
+        height: 255px;
     }
 }
 

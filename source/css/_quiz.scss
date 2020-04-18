@@ -16,6 +16,11 @@ $black: #25272a;
 }
 
 .quiz .form__item {
+  max-width: 950px;
   padding-bottom: 0;
   margin-bottom: 75px;
+}
+
+.quiz .form_pop {
+  overflow: initial;
 }

@@ -126,6 +126,10 @@
     align-items: center;
 }
 
+.form__item--row--slider {
+    display: block!important;
+}
+
 .form__footer button {
     max-width: 188px;
 }
@@ -148,7 +152,7 @@
 }
 
 .quiz .form__user .form__item {
-    margin-bottom: 33px;
+    margin-bottom: 38px;
 
     &:last-child {
         margin-bottom: 0;
@@ -178,6 +182,11 @@
 
 .form__inner {
     position: relative;
+    width: 100%;
+}
+
+.form__item--row .form__title {
+    grid-column: 1 / -1;
 }
 
 .form__loader {

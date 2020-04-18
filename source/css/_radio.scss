@@ -3,14 +3,15 @@ $orange: #ff805b;
 
 .radio__label {
   position: relative;
+  display: flex;
   padding-left: 35px;
-  font-size: 18px;
+  font-size: 14px;
 
   &::after {
     content: " ";
     position: absolute;
     left: 0;
-    top: 2px;
+    top: 0;
     width: 20px;
     height: 20px;
     border-radius: 50%;
